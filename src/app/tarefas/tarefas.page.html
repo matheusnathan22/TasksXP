@@ -1,0 +1,55 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Matheus Nathan</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-textarea [readonly]="true" label="Nível" placeholder="50"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea [readonly]="true" label="XP" placeholder="2500"></ion-textarea>
+    </ion-item>
+  </ion-content>
+  
+  <ion-footer class="sairPerfil">
+    <style>
+      .sairPerfil{text-align: center;}
+    </style>
+    <ion-toolbar>
+      <ion-button routerLink="/home">Sair</ion-button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Tarefas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-header class="addTarefa">
+    <style>
+      .addTarefa{text-align: center;}
+    </style>
+    <ion-toolbar>
+      <ion-button routerLink="/nova-tarefa">Nova Tarefa</ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>  
+ 
+  </ion-content>
+</div>

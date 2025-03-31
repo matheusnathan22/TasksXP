@@ -1,21 +1,409 @@
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
-<head>
-<title>TasksXP</title>
-</head>
-<body>
+    <head>
+        <link href="./bulma-0.7.4/css/bulma.css" type="text/css" rel="stylesheet">
+        <title>TasksXP</title>
+    </head>
 
-<h1>TasksXP</h1>
-<p>
-  A TasksXP tem como objetivo desenvolver um aplicativo de agendamento de tarefas do dia a dia, 
-  afim de recompensar os usuários com um sistema de pontuações. 
-  A ideia principal do sistema de pontuações, é criar um incentivo e ao mesmo tempo simbolizar o progresso e nível de aprendizado quanto à capacidade de organização dos jovens. 
-  Dentro do aplicativo, será possível criar pequenas tarefas ou grupos de tarefas, que ao serem concluídas,  serão concedidos pontos de experiência, dependendo exclusivamente da dificuldade de cada tarefa, que será escolhida pelo usuário. 
-  Ao acumular certas quantias de pontos de experiência, será possível subir de nível e assim obter outras recompensas que poderão ser definidas pelo próprio usuário, como por exemplo, o direito de atividades de lazer após concluir uma série de tarefas relacionadas ao estudo.
-</p>
+    <body style="background-color:white">
+        
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        <img src="./imagens/logo_site.png" width="112" height="30">
+                    </a>  
+                    <a class="navbar-item">
+                    HOME
+                    </a>
+                    <a class="navbar-item">
+                        ABOUT
+                    </a>
+                    <a class="navbar-item">
+                        FOOD MENU
+                    </a>
+                    <a class="navbar-item">
+                         GALLERY
+                    </a>
+                    <a class="navbar-item">
+                         BOOKED
+                    </a>
+                    <a class="navbar-item">
+                        BLOG
+                    </a>
+                    <a class="navbar-item">
+                        CONTACT
+                    </a>
+        </nav>
+        
+        <section class="section is-large" style="background-image: url(./imagens/prato.jpg);background-repeat: no-repeat">
+            <div class="container">
+                <h1 style="color:white;font-family:Arial, Helvetica, sans-serif;font-size:80px">TasksXP</h1>
+                <h2 style="color:white;font-size:40px">Making People Happy</h2>
+                <p style="color:white">Suspendisse potenti. Nullam ac enim nunc. Vestibulum congue at mi a<br> tempus. Sed ullamcorper, odio eget malesuada</p><br>
+                <a class="button is-success">BOOK A TABLE</a> <a class="button is-success">VIEW MENU</a>
+            </div>
+        </section>
 
-<p>
-  Com esta ferramenta, nosso principal público alvo são os jovens, que em muitos momentos nesta fase da vida, se veem rodeados de novas obrigações que surgem naturalmente à medida que vão assumindo novas responsabilidades.
-</p>
+        <section class="section is-medium">
+            <div class="columns">
+                <div class="column">
+                    <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px">About Bdrestaurant</h2>
+                    <p style="text-align:justify">Proin consectetur maximus dui, eget sagittis lectus lobortis vel.</p><br>
+                    <p style="text-align:justify">Sed semper vel lorem ac interdum. Cras non euismod sem, eget imperdiet felis. Fusce ac facilisis ex. Praesent risus turpis, ornare eu porttitor vitae, accumsan a lacus.</p><br>
+                    <p style="text-align:justify">Quisque in elit at nisl efficitur elementum. Phasellus bibendum felis in dui tincidunt, et ultrices nunc semper. Fusce et ague faucibus nisl vestibulum congue.</p><br>
+                    
+                    <a class="button is-success">BOOK A TABLE</a>
+                </div>
+                <div class="column" style="text-align:right">
+                   <video src= "./videos/torta.mp4" heigth="300" width="300" controls>
+                    Video not supported
+                    </video>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-medium" style="background-color: rgb(219, 219, 219);background-repeat: no-repeat">
+            <div class="container">
+                <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">Our Popular Dishes</h2>
+                <p style="text-align: center">Mauris pellentesque finibus velit at volutpat. Suspendisse porta in urna vitae commodo</p>
+                <p style="text-align: center">Praesent eget mollis odio. Curabitur rhoncus neque odio.</p>
+            </div>
+            <br><br>
+            <div class="columns">
+                <div class="column" style="text-align: center">
+                    <img src="./imagens/prato1.jpg" height="240" width="320"><br>
+                    
+                </div>
+                <div class="column" style="text-align: center">
+                    <img src="./imagens/prato2.jpg" height="240" width="320"><br>
+                    
+                </div>   
+               <div class="column" style="text-align: center">
+                    <img src="./imagens/prato3.jpg" height="240" width="320"><br>
+               </div> 
+            </div>
 
-</body>
+            <div class="columns">
+                <div class="column" style="text-align: center">
+                    <h3 style="font-size:25px">Healthy Breakfast</h3><br>
+                    <span class="tag is-success" style="font-size:15px">$17</span>
+                </div>
+               <div class="column" style="text-align: center">
+                    <h3 style="font-size:25px">Healthy Lunch</h3><br>
+                    <span class="tag is-success" style="font-size:15px">$33</span>
+                </div>
+               <div class="column" style="text-align: center">
+                    <h3 style="font-size:25px">Healthy Dinner</h3><br>
+                    <span class="tag is-success" style="font-size:15px">$21</span>
+                </div>       
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">Our Food Menu</h2>
+                <p style="text-align:center">Etiam convallis, mauris id tempor rutrum, nisl turpis tincidunt nulla, vel dapibus <br> odio vellit ut nulla. Ed eget posuere nibh. Sed a tristique dui.</p>
+                <br><br>
+            </div>
+            
+            <div class="grid-container">    
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Baked Crab Cheese.jpg">
+                    </figure>     
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Baked Crab Cheese</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$37</span>
+                </div>
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Caprese Salad.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Caprese Salad</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$13</span>
+                </div>   
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Crispy Squid.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Crispy Squid</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$32</span>
+                </div>
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Chicken Soup.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Chicken Soup</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$23</span>
+                </div>
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Roasted Chicken.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Roasted Chicken</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$25</span>
+                </div>
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Foie Gras.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                        <h3><strong>Foie Gras</strong></h3>
+                        <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                        <span class="tag is-success">$45</span>
+                </div>
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Napa Cabbage.jpg">
+                    </figure>   
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Napa Cabbage</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$55</span>
+                </div>
+                <div class="grid-item">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="./imagens/Strawberry Pancake.jpg">
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <h3><strong>Strawberry Pancake</strong></h3>
+                    <p>Ut nulla arcu, ornare vitae vulputate et, malesuada at justo. Suspendisse lacina.</p>
+                    <span class="tag is-success">$33</span>
+                </div>
+            </div>
+            <br><br>
+            <div style="text-align:center" class="container">
+                <a class="button is-success">VIEW FULL MENU</a>
+            </div>
+        </section>
+        
+        <section class="section is-medium" style="background-color: rgb(219, 219, 219);background-repeat: no-repeat">
+            <div class="container" style="text-align:center">
+                <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">Our Gallery</h2>
+                <p>Suspendisse potenti. Proin feugiat diam non ex pretium, ac scelerisque enim vulputate.</p>
+                <p>Proin cursus metus diam. Ut quis malesuada purus</p>
+            </div>
+            <br><br>
+            
+            <div class="columns" style="text-align:center">
+                <div class="column">
+                    <img src="./imagens/carne.jpg" height="240" width="320">
+                </div>
+                <div class="column">
+                    <img src="./imagens/camarao.jpg" height="240" width="320">
+                </div>
+                <div class="column">
+                    <img src="./imagens/sushi.jpg" height="240" width="320">
+                </div>
+            </div>
+
+            <div class="columns" style="text-align:center">
+                <div class="column">
+                    <img src="./imagens/ratatouille.jpg" height="240" width="320">
+                </div>
+                <div class="column">
+                    <img src="./imagens/batata.jpg" height="240" width="320">
+                </div>
+                <div class="column">
+                    <img src="./imagens/lanche.jpeg" height="240" width="320">
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-medium">
+            <div class="container" style="text-align:center">
+                <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">Client Feedback</h2>
+                <p>Duis non augue vel erat tempus semper vitae quis urna. Mauris sed velit sed ipsun<br>feugiat maximus id vel felis. Duis Mauris massa, pharetra eget mi at.</p>
+            </div>
+            <br><br>
+            <div class="columns">
+                <div class="column">
+                    <p><em>For Websites and online businesses testimonials can be even more useful than traditional businesses because visitors are often skeptical or hesitant to trust someone online</em></p>
+                    <br>
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="./imagens/people1.jpg">
+                    </figure>
+                    <p>Marryane M. Flowers, Clearwater</p>
+                    <br><br>
+
+                </div>
+                <div class="column" style="text-align:right">
+                    <img src="./imagens/pizza2.jpg" height="300" width="250">
+                    <img src="./imagens/pizza3.jpg" height="300" width="250">
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-medium" style="background-image:url(./imagens/fundo3.jpg);background-repeat: no-repeat">
+            <div class="container" style="text-align:center">
+                
+                <div class="columns">
+                    
+                    <div class="column is-half is-offset-one-quarter">
+                        <div class="field">
+                            <h2 style="font-family:Arial, Helvetica, sans-serif;color:white;font-size:40px;text-align: center">Book A Table</h2>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Contact Number">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="button is-success">BOOK A TABLE</a>
+            </div>
+        </section>
+
+        <section class="section is-medium">
+            <div class="columns">
+                <div class="column" style="text-align:center">
+                    <img src="./imagens/Vegetable soup.jpg" height="300" width="400">
+                </div>
+                <div class="column">
+                    <div class="conatiner" style="text-align:center">
+                        <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">32% Off</h2>
+                        <h3 style="font-family:Arial, Helvetica, sans-serif;font-size:30px;text-align: center">Our Vegetable Soup</h3>
+                        <p>Donec a diam a eros dictum auctor. Muris tempus sed turpis sit amet auctor. Vivamus rutrum blandit quan ut blandt. Aenean in placerat dui. Ut tellus justo, molestie non posuere vitae.</p>
+                        <br>
+                        <a class="button is-success">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: rgb(219, 219, 219)">
+            <div class="conatiner" style="text-align:center">
+                <h2 style="font-family:Arial, Helvetica, sans-serif;font-size:40px;text-align: center">Restaurant News From Blog</h2>
+                <p>Sed sempervel lorem ac interdum. Cras non euismod sem, eget imperdiet felis.<br> Fusce ac facilisis ex. Praesent isus turpis, ornare eu porttitor vitae.</p>
+            </div>
+            <br>
+            <div class="columns" style="text-align:center">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                            <img src="./imagens/people4.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                            A Closer Look at AdWords' Update to Keyword
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                            <img src="./imagens/people5.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                Save Time and Effort with Facebook Saved Audiences
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                            <img src="./imagens/people6.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                Responsive Web Design: The Answer of Today and Tomorrow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif;font-size:20px">Contact Us</h3>
+                    <p>Your official source for 24/7</p>
+                    <p>Fax: +88-02-9882970</p>
+                </div>
+                <div class="column">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif;font-size:20px">Opening Hour</h3>
+                    <p>Monday - Saturday....8 AM ~ 5 PM</p>
+                    <p>Sunday..............12 AM ~ 5 PM</p>
+                </div>
+                <div class="column">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif;font-size:20px">Location</h3>
+                    <p>Address: Flat no B-5 Plot 06</p>
+                    <p>Block SW (H)-California</p>
+                </div>
+                <div class="column">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif;font-size:20px">Subscribe Newsletter</h3>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Email*">
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="text-align:left">
+                    <br>
+                    <a class="button is-success">SUBMIT</a>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

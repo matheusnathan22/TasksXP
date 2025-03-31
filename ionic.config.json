@@ -1,7 +1,0 @@
-{
-  "name": "TasksXP",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

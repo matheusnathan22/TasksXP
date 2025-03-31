@@ -1,0 +1,52 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Novo Usuário</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Nome:" maxlength="35" [(ngModel)]="formData.nome"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-textarea label="Usuário:" maxlength="10" [(ngModel)]="formData.login"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" label="Senha:" maxlength="10" [(ngModel)]="formData.senha">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+
+  <ion-footer class="salvarCancelar">
+    <style>
+      .salvarCancelar{text-align: center;}
+    </style>
+    <ion-toolbar>
+      <ion-button (click)="adicionarUsuario()">Salvar</ion-button> <ion-button (click)="cancelar()">Cancelar</ion-button>
+      <ion-toast
+        [isOpen]="toastCampoVazio"
+        message="Preencha todos os campos"
+        [duration]="2000"
+        (didDismiss)="setCampoVazioOpen(false)">
+      </ion-toast>
+      <ion-toast
+        [isOpen]="toastLoginEspaco"
+        message="Usuário não deve ter espaços"
+        [duration]="2000"
+        (didDismiss)="setLoginEspacoOpen(false)">
+      </ion-toast>
+      <ion-alert
+        [isOpen]="alertLoginExist"
+        message="O usuário escolhido já existe!"
+        [buttons]="alertButtons"
+        (didDismiss)="setLoginExistOpen(false)"
+      ></ion-alert>
+    </ion-toolbar>
+  </ion-footer>
+</div>
